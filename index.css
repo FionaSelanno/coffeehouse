@@ -1,3 +1,90 @@
-body{
-    background-color: pink;
+/* Resetting default browser styles */
+
+/* Reset margins and padding on all elements */
+* {
+    margin: 0;
+    padding: 0;
 }
+
+/* Resetting list styles for ul and ol */
+ul, ol {
+    list-style: none;
+    padding: 0;
+}
+
+/* Resetting anchor (a) styles */
+a {
+    text-decoration: none;
+    color: inherit; /* Inherit the color from the parent */
+}
+
+/* Resetting heading margins */
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+/* Resetting form elements */
+input, button, select, textarea {
+    /* Reset any browser-specific styles */
+    /* For example: */
+    border: none;
+    outline: none;
+    /* ... other styles */
+}
+
+
+body{
+    background-color: #E1D4C9;
+    font-family: Inter;
+}
+
+section{
+    margin: 20px 40px 0;
+}
+
+ul{
+    list-style-type:none;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu > #logo{
+    width: 100px;
+    height: 60px;
+    text-align: center;
+}
+
+.menu > #logo > #ellipse{
+    width: 38px;
+    height: 38px;
+}
+
+.menu > #logo > #resource{
+    position: relative;
+    top: -54px;
+}
+
+.menu > #logo > #coffeehouse{
+    position: relative;
+    top: -7px;
+}
+
+#cup{
+    position: relative;
+    top: 3px;
+}
+
+#indexing{
+    display:flex;
+    gap:40px;
+
+}
+
+
+#hero{
+    margin-top:20px;
+}
+
