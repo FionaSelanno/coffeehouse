@@ -4,40 +4,54 @@
         <link rel="stylesheet" href="index.css">
     </head>
     <body>
-        <section id = "header">
-            <ul class = "menu">
-                <div id = "logo">
-                    <img id="ellipse" src="images/Ellipse.svg" alt="SVG image">
-                    <img id="coffeehouse" src="images/Coffee_House.svg" alt ="SVG image">
-                    <img id="resource" src="images/Resource.svg" alt="SVG image">
+        <ul class = "menu">
+                <img class="logo__ellipse" src="images/logo.svg" alt="SVG image">
+            <li class="menu__item">
+                <ul class="nav">
+                    <li class="nav__item">Favorite coffee</li>
+                    <li class="nav__item">About</li>
+                    <li class="nav__item">Mobile app</li>
+                    <li class="nav__item">Contact us</li>
+                </ul>
+            </li>
+            <li class = "menu__item">
+                <div class="dropdown">
+                    Menu <img id="dropdown__img" src="images/coffee-cup.svg" alt="SVG image">
                 </div>
-                <li>
-                    <ul id="indexing">
-                        <li>Favorite coffee</li>
-                        <li>About</li>
-                        <li>Mobile app</li>
-                        <li>Contact us</li>
-                    </ul>
-                </li>
-                <li class = "menu-dropdown">
-                    <div>
-                        Menu <img id="cup-img" src="images/coffee-cup.svg" alt="SVG image">
+            </li>
+        </ul>
+        <div class="content">
+            <section id = "header">
+                <div class = "hero">
+                    <div class="hero__content">
+                        <p class = "hero__title">
+                            <span class = "hero__title--highlighted">Enjoy</span> premium coffee at our charming cafe
+                        </p>
+                        <p>With its inviting atmosphere and delicious coffee options, the Coffee House Resource is a popular destination for coffee lovers and those seeking a warm and inviting space to enjoy their favorite beverage.</p>
+                        <button class="hero__cta">Menu</button>
                     </div>
-                </li>
-            </ul>
-            <div id = "hero">
-                <div class="hero-content">
-                    <p id = "offer">
-                        <span class = "enjoy">Enjoy</span> premium coffee at our charming cafe
-                    </p>
-                    <p>With its inviting atmosphere and delicious coffee options, the Coffee House Resource is a popular destination for coffee lovers and those seeking a warm and inviting space to enjoy their favorite beverage.</p>
-                    <button>Menu</button>
                 </div>
-            </div>
-        </section id = "choose-coffee">
-            <p>choose your favorite color</p>
-
-        
-        </section>
+            </section>
+            <section id = "choose_coffee">
+                <p class="salescopy--dark">choose your <span class="salescopy--highlighted"> favorite</span> coffee</p>
+                <div class="container__slider">
+                    <button class="btn">&lt;</button>
+                    <div class="slider">
+                        <div class="slider__item">
+                            <img src="images/coffee-slider-1.png" alt="slider image 1">
+                            <p>This new drink takes an espresso and mixes it with brown sugar and cinnamon before being topped with oat milk</p>
+                        </div>
+                        <div class="slider__item">
+                            <img src="images/coffee-slider-2.png" alt="slider image 2">
+                            <p>Fragrant and unique classic espresso with rich caramel-peanut syrup, with cream under whipped thick foam.</p>
+                        </div>
+                        <div class="slider__item">
+                            <img src="images/coffee-slider-3.png" alt="slider image 3">
+                            <p>A popular summer drink that tones and invigorates. Prepared from coffee, milk and ice.</p>
+                        </div>
+                    </div>
+                    <button class="btn">&gt</button>
+            </section>
+        </div>
     </body>
 </html>
