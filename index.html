@@ -25,33 +25,48 @@
                 <div class = "hero">
                     <div class="hero__content">
                         <p class = "hero__title">
-                            <span class = "hero__title--highlighted">Enjoy</span> premium coffee at our charming cafe
+                            <span class = "title--highlighted">Enjoy</span> premium coffee at our charming cafe
                         </p>
-                        <p>With its inviting atmosphere and delicious coffee options, the Coffee House Resource is a popular destination for coffee lovers and those seeking a warm and inviting space to enjoy their favorite beverage.</p>
+                        <p class="hero__body">With its inviting atmosphere and delicious coffee options, the Coffee House Resource is a popular destination for coffee lovers and those seeking a warm and inviting space to enjoy their favorite beverage.</p>
                         <button class="hero__cta">Menu</button>
                     </div>
                 </div>
             </section>
-            <section id = "choose_coffee">
-                <p class="salescopy--dark">choose your <span class="salescopy--highlighted"> favorite</span> coffee</p>
+            <section id="choose_coffee">
+                <p class="salescopy--dark">choose your <span class="title--highlighted"> favorite</span> coffee</p>
                 <div class="container__slider">
-                    <button class="btn">&lt;</button>
+                    <button class="btn" id="prev">&lt;</button>
                     <div class="slider">
-                        <div class="slider__item">
-                            <img src="images/coffee-slider-1.png" alt="slider image 1">
-                            <p>This new drink takes an espresso and mixes it with brown sugar and cinnamon before being topped with oat milk</p>
-                        </div>
-                        <div class="slider__item">
-                            <img src="images/coffee-slider-2.png" alt="slider image 2">
-                            <p>Fragrant and unique classic espresso with rich caramel-peanut syrup, with cream under whipped thick foam.</p>
-                        </div>
-                        <div class="slider__item">
-                            <img src="images/coffee-slider-3.png" alt="slider image 3">
-                            <p>A popular summer drink that tones and invigorates. Prepared from coffee, milk and ice.</p>
+                        <div class="slider__list">
+                            <div class="slider__item slider__item--active">
+                                <img class ="slider__img" src="images/coffee-slider-1.png" alt="slider image 1">
+                                <p class="slider__title">S'mores Frappucino</p>
+                                <p class="slider__body">This new drink takes an espresso and mixes it with brown sugar and cinnamon before being topped with oat milk</p>
+                                <p class="slider__price">&dollar;5.50</p>
+                            </div>
+                            <div class="slider__item">
+                                <img class="slider__img" src="images/coffee-slider-2.png" alt="slider image 2">
+                                <p class="slider__title">Caramel Macciato</p>
+                                <p class="slider__body" >Fragrant and unique classic espresso with rich caramel-peanut syrup, with cream under whipped thick foam.</p>
+                                <p class="slider__price">&dollar;5.00</p>                        
+                            </div>
+                            <div class="slider__item">
+                                <img class="slider__img" src="images/coffee-slider-3.png" alt="slider image 3">
+                                <p class="slider__title">Ice coffee</p>
+                                <p class="slider__body">A popular summer drink that tones and invigorates. Prepared from coffee, milk and ice.</p>
+                                <p class="slider__price">&dollar;5.00</p>  
+                            </div>
                         </div>
                     </div>
-                    <button class="btn">&gt</button>
+                    <button class="btn" id = "next">&gt</button>
+                </div>
+                <div class="slider__nav">
+                    <div class="slider__dot slider__dot--active"></div>
+                    <div class="slider__dot"></div>
+                    <div class="slider__dot"></div>
+                </div>
             </section>
-        </div>
+              
+        <script src="index.js"></script>
     </body>
 </html>
