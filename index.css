@@ -90,6 +90,13 @@ section, .menu{
     height: 60px;
 }
 
+.btn__icon--dark{
+    background-color: var(--background-container);
+    color:var(--fontcolor-light);
+    border: 1px solid var(--fontcolor-light);
+
+}
+
 .btn__icontxt{
     width: 200px;
     display: flex;
@@ -183,6 +190,7 @@ section, .menu{
     color: var(--fontcolor-accent);
     font-style: italic;
     font-size: inherit;
+    line-height: 70px;
 }
 
 .hero__body{
@@ -205,6 +213,14 @@ section, .menu{
     font-family: var(--fontfam);
     line-height: 70px;
 }
+
+.salescopy--light{
+    color: var(--fontcolor-light);
+    font-size: 60px;
+    font-family: var(--fontfam);
+    line-height: 70px;
+}
+
 
 .salescopy--left{
     color: var(--fontcolor-dark);
@@ -298,7 +314,6 @@ section, .menu{
 }
 
 .salescopy--left{
-    text-align: justify;
     color: var(--fontcolor-dark);
     font-size: 60px;
     font-family: var(--fontfam);
@@ -334,19 +349,54 @@ section, .menu{
 }
 
 /*** section Mobile app **/
-#mobile-app{
+.container__split{
     display: flex;
     gap:40px;
-   max-width: 100vw;
+    max-width: 100%;
 }
 
 .mobile__img{
     width: 50%;
     max-width: 1000px;
 }
-.mobile__text{
+
+.split__left, .split__right{
     display: flex;
     flex-direction: column;
     gap: 40px;
     justify-content: center;
+    width: 100%;
 }
+
+.split__right{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    justify-content: center;
+    width: 100%;
+}
+
+/*** section Contact ***/
+#contact{
+    background-color: var(--background-container);
+    color:var(--fontcolor-light);
+    border-radius: 40px;
+    margin-bottom:40px;
+}
+
+.container__split--margin{
+    margin:100px;
+}
+
+.container__btn{
+    display: flex;
+    gap:12px;
+}
+
+.contactinfo > *{
+    font-size: 16px;
+}
+.contactinfo > .contactinfo__title{
+    font-size: 24px;
+}
+
