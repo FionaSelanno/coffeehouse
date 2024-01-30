@@ -5,9 +5,13 @@ let list = document.querySelector(".slider__list");
 let itemsArr = document.querySelectorAll(".slider__item");
 let index = 0;
 let len = itemsArr.length - 1;
+let cta_hero = document.querySelector(".hero__cta");
 
-prev.addEventListener('click', goToSlide)
-next.addEventListener('click', goToSlide)
+prev.addEventListener('click', goToSlide);
+next.addEventListener('click', goToSlide);
+cta_hero.addEventListener('mouseover', event => {
+    ac
+});
 
 function goToSlide(event){
     var clickedElement = event.target;
